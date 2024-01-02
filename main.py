@@ -29,7 +29,7 @@ class CarData(BaseModel):
     origin: str
     model_year: int
 
-@app.post("/process_car_data")
+@app.post("/prediksi_data/")
 async def process_car_data(car_data: CarData):
     # Lakukan pemrosesan atau logika bisnis di sini
     dictio_origin = {
